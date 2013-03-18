@@ -10,10 +10,10 @@ Save your HTML in tumblr and your pageview tracking will now register every page
 If you would like to see the code that was changed, reference the following file:
 changed-javascript.js
 
-The code that was added is on lines 9 and 14-16.
+The code that was added is on lines 10 and 16-18.
 
-9 => var refc = window.location.pathname.slice(0,-1);
+10 => var refc = window.location.pathname.slice(0,-1);
 
-14-16 =>   if ((refc != c) && (c != '/page/1')) {
+16-18 =>   if ((refc != c) && (c != '/page/1')) {
                 _gaq.push(['_trackPageview', c]);
            }
